@@ -4,6 +4,11 @@
 
 def swap_case(s):
     for i in range(0,(len(s)-1)):
+        if s[i].isdigit():
+            continue
+        #Check for special characters in the string
+        if re.match(s[i],"\.\'\""):
+            continue
         s=s[:i] + s[i].swapcase() + s[i+1:]
     return s
 
