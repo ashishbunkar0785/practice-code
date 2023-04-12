@@ -10,8 +10,12 @@ The characters in  are a subsequence of the characters in .
 Any repeat occurrence of a character is removed from the string such that each character in  occurs exactly once. In other words, if the character at some
 index  in  occurs at a previous index  in , then do not include the character in string .
 Given  and , print  lines where each line  denotes string .
-Example
-
+Example: Input="AAABCACAADDE", k=3
+o/p:
+A
+BCA
+CA
+DE
 
 There are three substrings of length  to consider: 'AAA', 'BCA' and 'DDE'. The first substring is all 'A' characters, so . The second substring has all 
 distinct characters, so . The third substring has  different characters, so . Note that a subsequence maintains the original order of characters 
