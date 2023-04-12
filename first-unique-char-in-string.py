@@ -1,3 +1,7 @@
+#Find first unique character in the given string
+#Example: s="Ashish" Ans: A
+#s="Anushka" Ans:n
+
 def firstUniqChar(self, s):
         """
         :type s: str
