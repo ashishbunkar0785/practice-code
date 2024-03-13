@@ -27,6 +27,7 @@ class Solution(object):
             print(s[index+1:(index + 1 + len(temp_str))])
             if temp_str == s[index+1:(index + 1 + len(temp_str))]:
                 return_flag=True
+                #For loop starts at index+len(temp_str+1) and each increase is equal to len(temp_str)
                 for i in range(index+len(temp_str)+1,len(s),len(temp_str)):
                     print("in if:", i)
                     print(s[i:i+len(temp_str)])
